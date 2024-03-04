@@ -1,0 +1,167 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bitmap.png");
+      background-size: cover;
+      background-attachment: fixed;
+      position: static;
+      color:rgb(250, 165, 255);
+    text-shadow: 0 4px 20px 40px rgb(37, 4, 68);
+    }
+    
+    a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .NavBar
+    {
+        float:right;
+        padding:10px;
+        list-style-type: none;
+        font-size:large;
+        display:flex;
+    }
+    
+    .nav
+    {
+      padding: 12px;
+      cursor: pointer;
+      text-shadow: rgb(255, 91, 247) 1px 0 10px;
+      transition: background-color 1s;
+      transition: border 0.2s;
+    }
+    .head
+    {
+        margin-top: 12px;
+        margin-left: 12px;
+        position: relative;
+    }
+
+    @keyframes logoAnim {
+        from {box-shadow: 0 0 0px px blueviolet;}
+        to {box-shadow: 0 0 20px 5px blueviolet;}
+      }
+    
+    .logo
+    {
+        background-color: rgba(40, 18, 92, 0.5);
+        width:150px;
+        font-size: small;
+        float:left;
+        text-align: center;
+        padding-top:25px;
+        padding-bottom:25px;
+        padding-left:25px;
+        padding-right: 30px;
+        border-radius:20px;
+        margin-top: 12px;
+        margin-left:20px;
+        border: 3px solid rgba(196, 245, 255, 0.76);
+        box-shadow: 0 0 0px 0px blueviolet;
+        animation-name: logoAnim;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+table 
+{
+    border-collapse: collapse;
+    background-color: rgba(40, 18, 92, 0.5);
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td 
+{
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    
+    padding: 8px;
+    text-align: center;
+
+}
+
+th 
+{
+    cursor: pointer;
+}
+
+section
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.all
+{
+    position: relative;
+    padding: 15px;
+}
+
+.radio
+{
+    position: absolute;
+    left:5%;
+    padding-bottom:12px;
+    
+
+}
+
+label
+{
+    background-color: black;
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    background-color: rgba(40, 18, 92, 0.5);
+    padding: 12px;
+    margin:10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.radio1
+{
+    margin:12px;
+    background-color: black;
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    cursor: pointer;
+}
+
+.mainTable
+{
+  margin-top: 60px;
+
+}
+
+input
+{
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    border-radius: 50%;
+}
+
+label:hover
+{
+    color: rgb(221, 185, 255);
+    box-shadow: 0 0 20px 5px blueviolet;
+}
+.nav:hover
+{
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    border-radius:12px;
+    text-shadow: rgb(255, 91, 247) 1px 0 10px;
+}
+

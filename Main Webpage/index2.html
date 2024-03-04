@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page</title>
+   <link href="style2.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head">
+         
+          <ul class="NavBar">
+              <li class="nav"><a href="index.html">Home</a></li>
+             <li class="nav"><a href="index1.html">Grade Converter</a></li>
+              <li class="nav"><a href="#">Staff Page</a></li>
+              <li class="nav"><a href="index3.html">Weather Unit Converter</a></li>
+          </ul>
+          <div class="logo"><h2>Staff Page</h2></div>
+        </div>
+      </header>
+
+
+
+<section>
+    <div class="all">
+<div class="radio">
+    <label>
+        <input type="radio" class="radio1" name="sort" value="name" onchange="sortTable(this.value)"> Sort by Name
+    </label>
+    <label>
+        <input type="radio" class="radio1" name="sort" value="salary" onchange="sortTable(this.value)"> Sort by Salary
+    </label>
+</div>
+<div class="mainTable">
+<table id="staffTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Employee ID</th>
+            <th>Start Date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Staff members will be dynamically added here -->
+    </tbody>
+</table>
+</div>
+</div>
+</section>
+<script src="script2.js"></script>
+</body>
+</html>

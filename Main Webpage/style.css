@@ -1,0 +1,215 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bitmap.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position:static;
+    color:rgb(250, 165, 255);
+    text-shadow: 0 4px 20px 40px rgb(37, 4, 68);
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.NavBar
+{
+    float:right;
+    padding:10px;
+    list-style-type: none;
+    font-size:large;
+    display:flex;
+}
+
+.nav
+{
+  padding: 12px;
+  cursor: pointer;
+  text-shadow: rgb(255, 91, 247) 1px 0 10px;
+  transition: background-color 1s;
+  transition: border 0.2s;
+}
+.head
+{
+    margin-top: 12px;
+    margin-left: 12px;
+    position: relative;
+}
+
+@keyframes logoAnim {
+    from {box-shadow: 0 0 0px px blueviolet;}
+    to {box-shadow: 0 0 20px 5px blueviolet;}
+  }
+
+.logo
+{
+    background-color: rgba(40, 18, 92, 0.5);
+    width:100px;
+    float:left;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:30px;
+    padding-right: 30px;
+    border-radius:20px;
+    margin-left:20px;
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 0px 0px blueviolet;
+    animation-name: logoAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+.MainHead
+{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:200px ;
+    padding-left:70px;
+    width: 100%;
+    
+}
+h1
+{
+    font-size:100px;
+    text-align:center;
+    position:absolute;
+    text-shadow: rgb(179, 0, 255) 1px 0 10px;
+   
+}
+
+.properties
+{
+    margin-left:30px;
+    padding:10px;
+    list-style-type: none;
+    font-size:large;
+    display:flex;
+    position:absolute;
+    margin-top: 250px;
+    font-size:30px;
+    
+}
+
+.prop
+{
+   padding:12px;
+   text-shadow: rgb(179, 0, 255) 1px 0 10px;
+}
+
+#more
+{
+   position:absolute;
+   margin-top: 400px;
+   margin-left: 12px;
+   
+}
+
+
+@keyframes popupAnim {
+    from{opacity:0;}
+    to{opacity:1;}
+    
+}
+
+#PopupMod
+{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size:medium;
+    padding:30px;
+    display:block;
+    width:400px;
+    margin-top: 200px;
+    font-size:larger;
+    background-color: rgba(40, 18, 92, 0.5);
+    border-radius:20px;
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    display: none;
+    animation-name: popupAnim;
+    animation-duration: .5s;
+    opacity: 1;
+    
+}
+
+img
+{
+    color:rgb(0,0,0,0.5);
+    opacity: 0.8;
+   
+
+}
+.image {
+    clip-path: circle(50%);
+    width: 250px;
+    height: 250px;
+    margin-left: 40px; 
+    margin-bottom: 20px;
+    background-color: black;
+    box-shadow: 0 0 20px 5px blueviolet;
+  }
+
+  button
+  {
+    padding:12px;
+    margin-top: 12px;
+    background-color: rgba(40, 18, 92, 0.5);
+    border-radius:20px;
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 0px 0px blueviolet;
+    font-size: medium;
+    color:rgba(250, 235, 215, 0.5);
+    margin-left: 110px;
+    cursor: pointer;
+  }
+
+  button:hover
+  {
+    color: rgb(221, 185, 255);
+    box-shadow: 0 0 20px 5px blueviolet;
+    
+}
+
+button:active
+{
+    background-color: rgb(246, 243, 255);
+   
+}
+
+.nav:hover
+{
+    border: 3px solid rgba(196, 245, 255, 0.76);
+    box-shadow: 0 0 20px 5px blueviolet;
+    border-radius:12px;
+    text-shadow: rgb(255, 91, 247) 1px 0 10px;
+}
+
+footer{
+    display:flex;
+    position: absolute;
+    bottom: 40px;
+    left:40%;
+    font-size:larger;
+    border-top: 3px solid rgba(196, 245, 255, 0.76);
+    padding: 8px;
+
+}
+
+h4
+{
+  margin-left: 12px;
+}
